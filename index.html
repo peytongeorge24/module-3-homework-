@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password</h2>
+      </div>
+      <div>
+        <input id="lowercase-checkbox" type="checkbox"/> 
+        <label for="lowercase-checkbox">lowercase</label> 
+<!-- a comment -->
+        <input id="special-checkbox" type="checkbox"/> 
+        <label for="special-checkbox">special</label>
+
+        <input id="uppercase-checkbox" type="checkbox"/> 
+        <label for="uppercase-checkbox">uppercase</label>
+       
+        <input id="number-checkbox" type="checkbox"/> 
+        <label for="number-checkbox">numbers</label>
+
+      
+   
+        <input type="number" id="size-selector" value="16" min="8" max="128">
+        <label for="size-selector">password size</label>
+
+     
+        
+
+      </div>
+
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      </div>
+      <div class="card-footer">
+        <button id="generate" class="btn">Generate Password</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
